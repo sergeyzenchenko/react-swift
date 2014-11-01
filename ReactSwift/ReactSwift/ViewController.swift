@@ -10,7 +10,7 @@ import UIKit
 
 class SampleComponent : Component {
     override func render() -> Node {
-
+        return Switch()
     }
 }
 

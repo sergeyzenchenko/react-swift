@@ -12,9 +12,15 @@ class RenderingEngine: NSObject {
     typealias RenderingCallBack = (view: UIView) -> Void;
     
     let onRender:RenderingCallBack
+    var viewNodeMapping = [String:AnyClass]()
     
     init(onRender:RenderingCallBack) {
         self.onRender = onRender
+        
+        viewNodeMapping[NSStringFromClass(View)] = UIView.self
+        viewNodeMapping[NSStringFromClass(Button)] = UIButton.self
+        viewNodeMapping[NSStringFromClass(TextField)] = UITextField.self
+        viewNodeMapping[NSStringFromClass(Switch)] = UISwitch.self
     }
     
     func render(renderable:Renderable) {
@@ -25,10 +31,10 @@ class RenderingEngine: NSObject {
     }
     
     func buildView(node:Node) -> UIView {
-        let view = UIView()
+        var anyobjectype : AnyObject.Type = viewNodeMapping[NSStringFromClass(node.dynamicType)]!
+        var nsobjectype : NSObject.Type = anyobjectype as NSObject.Type
+        let view = nsobjectype() as UIView
         
-        view.frame = CGRectMake(0, 0, 100, 100)
-        view.backgroundColor = UIColor.redColor()
         
         return view
     }

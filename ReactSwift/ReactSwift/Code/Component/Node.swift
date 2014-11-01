@@ -8,6 +8,8 @@
 
 import UIKit
 
-class Node: NSObject {
-   
+class Node: NSObject, Renderable {
+    func render() -> Node {
+        return self
+    }
 }

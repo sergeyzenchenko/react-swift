@@ -19,3 +19,7 @@ class Button : Node {
 class TextField : Node {
     
 }
+
+class Switch : Node {
+    
+}

@@ -8,8 +8,8 @@
 
 import UIKit
 
-class Component: Node, Renderable {
-    func render() -> Node {
-        
+class Component: Node {
+    override func render() -> Node {
+        return View()
     }
 }
