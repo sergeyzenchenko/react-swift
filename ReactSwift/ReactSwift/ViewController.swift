@@ -33,8 +33,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         renderingEngine = RenderingEngine({
             [weak self]
-            (view2:  UIView) in
-            self!.currentView = view2
+            (view:  UIView) in
+            self!.currentView = view
         })
         renderingEngine!.render(SampleComponent());
     }
