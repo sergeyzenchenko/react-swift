@@ -13,7 +13,7 @@ class View : Node {
 }
 
 class Button : Node {
-    
+    var title:String = ""
 }
 
 class TextField : Node {

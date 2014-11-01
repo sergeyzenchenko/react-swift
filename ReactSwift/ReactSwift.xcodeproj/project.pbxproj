@@ -18,6 +18,7 @@
 		AD085A9B1A0539120075C3BF /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD085A9A1A0539120075C3BF /* Node.swift */; };
 		AD085A9D1A0539480075C3BF /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD085A9C1A0539480075C3BF /* Renderable.swift */; };
 		AD085A9F1A053A320075C3BF /* PrimitiveNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD085A9E1A053A320075C3BF /* PrimitiveNodes.swift */; };
+		AD085AA11A0549800075C3BF /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD085AA01A0549800075C3BF /* Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		AD085A9A1A0539120075C3BF /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		AD085A9C1A0539480075C3BF /* Renderable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
 		AD085A9E1A053A320075C3BF /* PrimitiveNodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimitiveNodes.swift; sourceTree = "<group>"; };
+		AD085AA01A0549800075C3BF /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				AD085A9A1A0539120075C3BF /* Node.swift */,
 				AD085A9C1A0539480075C3BF /* Renderable.swift */,
 				AD085A9E1A053A320075C3BF /* PrimitiveNodes.swift */,
+				AD085AA01A0549800075C3BF /* Layout.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				AD085A9B1A0539120075C3BF /* Node.swift in Sources */,
 				AD085A991A0538F40075C3BF /* Component.swift in Sources */,
 				AD085A9D1A0539480075C3BF /* Renderable.swift in Sources */,
+				AD085AA11A0549800075C3BF /* Layout.swift in Sources */,
 				AD085A961A0532F80075C3BF /* RenderingEngine.swift in Sources */,
 				AD085A721A05327B0075C3BF /* AppDelegate.swift in Sources */,
 			);
