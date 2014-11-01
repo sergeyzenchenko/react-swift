@@ -8,6 +8,12 @@
 
 import UIKit
 
+class SampleComponent : Component {
+    override func render() -> Node {
+
+    }
+}
+
 class ViewController: UIViewController {
 
     var renderingEngine:RenderingEngine?;
@@ -27,7 +33,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         renderingEngine = RenderingEngine({view in self.currentView = view;});
-        renderingEngine!.render();
+        renderingEngine!.render(SampleComponent());
     }
 
 }

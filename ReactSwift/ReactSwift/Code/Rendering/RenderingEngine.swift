@@ -17,12 +17,19 @@ class RenderingEngine: NSObject {
         self.onRender = onRender
     }
     
-    func render() {
+    func render(renderable:Renderable) {
+        let rootNode = renderable.render();
+        let view = buildView(rootNode)
+        
+        self.onRender(view: view)
+    }
+    
+    func buildView(node:Node) -> UIView {
         let view = UIView()
         
         view.frame = CGRectMake(0, 0, 100, 100)
         view.backgroundColor = UIColor.redColor()
         
-        self.onRender(view: view)
+        return view
     }
 }
