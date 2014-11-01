@@ -31,8 +31,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        renderingEngine = RenderingEngine({view in self.currentView = view;});
+        renderingEngine = RenderingEngine({
+            [weak self]
+            (view2:  UIView) in
+            self!.currentView = view2
+        })
         renderingEngine!.render(SampleComponent());
     }
 
