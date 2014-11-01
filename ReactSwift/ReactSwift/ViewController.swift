@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         renderingEngine = RenderingEngine({
             [weak self]
-            (view:  UIView) in
+            (view) in
             self!.currentView = view
         })
         renderingEngine!.render(SampleComponent());
