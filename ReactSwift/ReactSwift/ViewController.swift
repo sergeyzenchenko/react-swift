@@ -49,7 +49,7 @@ class TestComponent : Component {
 class SampleComponent : Component {
     
     struct State {
-        let enabled = false
+        let enabled:Bool
     }
     
     func state() -> State {
@@ -61,13 +61,23 @@ class SampleComponent : Component {
     }
     
     override func render() -> Node {
-        let view = ViewNode()
+        let view = LinearLayout()
         
         view.add(Switch(isOn: self.state().enabled) {[weak self] isOn in
             self!.setState(State(enabled: isOn))
         });
         
-        view.frame = CGRectMake(100, 100, 100, 100)
+        view.add(Switch(isOn: self.state().enabled) {[weak self] isOn in
+            self!.setState(State(enabled: isOn))
+        });
+        
+        view.add(Switch(isOn: self.state().enabled) {[weak self] isOn in
+            self!.setState(State(enabled: isOn))
+        });
+        
+        view.add(Button());
+        
+        view.frame = CGRectMake(100, 100, 100, 200)
         
         if self.state().enabled {
             view.backgroundColor = UIColor.redColor()

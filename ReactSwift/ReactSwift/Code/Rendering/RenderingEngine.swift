@@ -14,12 +14,12 @@ class RenderingEngine: NSObject {
     let onRender:RenderingCallBack
     var viewNodeMapping = [String:ViewBuilding]()
     
-    var root:Node
+    var rootComponent:Node
     var renderedRoot:Node
     
     init(onRender:RenderingCallBack) {
         self.onRender = onRender
-        root = ViewNode()
+        rootComponent = ViewNode()
         renderedRoot = ViewNode()
         
         viewNodeMapping[NSStringFromClass(ViewNode)] = ViewBuilder<UIView, ViewNode>({ node in
@@ -38,6 +38,14 @@ class RenderingEngine: NSObject {
             
             return s
         })
+        
+        viewNodeMapping[NSStringFromClass(LinearLayout)] = ViewBuilder<LinearLayoutView, LinearLayout>({ node in
+            let view = LinearLayoutView()
+            
+            return view
+        })
+        
+        
     }
     
     func renderComponent(node:Node) -> Node {
@@ -50,13 +58,17 @@ class RenderingEngine: NSObject {
         return rootNode
     }
     
-    func render(renderable:Node) {
-        root = renderable;
-        renderedRoot = renderComponent(root)
-        
-        root.invalidate = {
-            self.render(renderable)
+    func render(root:Node) {
+        rootComponent = root;
+        rootComponent.invalidate = {
+            self.renderTreeFromRoot()
         }
+        
+        renderTreeFromRoot()
+    }
+    
+    func renderTreeFromRoot() {
+        renderedRoot = renderComponent(rootComponent)
         
         let view = buildView(renderedRoot)
         

@@ -23,7 +23,7 @@ class Component: Node, Stateful {
     var internalState:Any?
 
     func state() -> StateType {
-        return internalState as StateType
+        return internalState
     }
     
     func setState(state:StateType) {

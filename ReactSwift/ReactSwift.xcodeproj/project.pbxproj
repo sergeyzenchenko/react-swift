@@ -21,6 +21,20 @@
 		AD085AA11A0549800075C3BF /* Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD085AA01A0549800075C3BF /* Layouts.swift */; };
 		ADEC33EB1A064920001D8375 /* ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEC33EA1A064920001D8375 /* ViewBuilder.swift */; };
 		ADEE122F1A05688F00AFADBF /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEE122E1A05688F00AFADBF /* Dispatcher.swift */; };
+		ADF679CE1A067128006A79D7 /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF679C11A067128006A79D7 /* Coefficients.swift */; };
+		ADF679CF1A067128006A79D7 /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF679C21A067128006A79D7 /* Compound.swift */; };
+		ADF679D01A067128006A79D7 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF679C31A067128006A79D7 /* Dimension.swift */; };
+		ADF679D11A067128006A79D7 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF679C41A067128006A79D7 /* Edge.swift */; };
+		ADF679D21A067128006A79D7 /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF679C51A067128006A79D7 /* Edges.swift */; };
+		ADF679D31A067128006A79D7 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF679C61A067128006A79D7 /* Expression.swift */; };
+		ADF679D41A067128006A79D7 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF679C71A067128006A79D7 /* Layout.swift */; };
+		ADF679D51A067128006A79D7 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF679C81A067128006A79D7 /* LayoutProxy.swift */; };
+		ADF679D61A067128006A79D7 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF679C91A067128006A79D7 /* Point.swift */; };
+		ADF679D71A067128006A79D7 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF679CA1A067128006A79D7 /* Priority.swift */; };
+		ADF679D81A067128006A79D7 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF679CB1A067128006A79D7 /* Property.swift */; };
+		ADF679D91A067128006A79D7 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF679CC1A067128006A79D7 /* Size.swift */; };
+		ADF679DA1A067128006A79D7 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF679CD1A067128006A79D7 /* View.swift */; };
+		ADF679DC1A06717E006A79D7 /* LinearLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF679DB1A06717E006A79D7 /* LinearLayoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +66,20 @@
 		AD085AA01A0549800075C3BF /* Layouts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layouts.swift; sourceTree = "<group>"; };
 		ADEC33EA1A064920001D8375 /* ViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBuilder.swift; sourceTree = "<group>"; };
 		ADEE122E1A05688F00AFADBF /* Dispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		ADF679C11A067128006A79D7 /* Coefficients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coefficients.swift; sourceTree = "<group>"; };
+		ADF679C21A067128006A79D7 /* Compound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compound.swift; sourceTree = "<group>"; };
+		ADF679C31A067128006A79D7 /* Dimension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
+		ADF679C41A067128006A79D7 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		ADF679C51A067128006A79D7 /* Edges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edges.swift; sourceTree = "<group>"; };
+		ADF679C61A067128006A79D7 /* Expression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		ADF679C71A067128006A79D7 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		ADF679C81A067128006A79D7 /* LayoutProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutProxy.swift; sourceTree = "<group>"; };
+		ADF679C91A067128006A79D7 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		ADF679CA1A067128006A79D7 /* Priority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
+		ADF679CB1A067128006A79D7 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		ADF679CC1A067128006A79D7 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		ADF679CD1A067128006A79D7 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		ADF679DB1A06717E006A79D7 /* LinearLayoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearLayoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +121,7 @@
 		AD085A6E1A05327B0075C3BF /* ReactSwift */ = {
 			isa = PBXGroup;
 			children = (
+				ADF679BF1A067128006A79D7 /* Cartography */,
 				AD085A911A0532D80075C3BF /* Code */,
 				AD085A711A05327B0075C3BF /* AppDelegate.swift */,
 				AD085A731A05327B0075C3BF /* ViewController.swift */,
@@ -153,6 +182,7 @@
 			children = (
 				AD085A951A0532F80075C3BF /* RenderingEngine.swift */,
 				ADEC33EA1A064920001D8375 /* ViewBuilder.swift */,
+				ADF679DB1A06717E006A79D7 /* LinearLayoutView.swift */,
 			);
 			path = Rendering;
 			sourceTree = "<group>";
@@ -174,6 +204,26 @@
 				AD085AA01A0549800075C3BF /* Layouts.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		ADF679BF1A067128006A79D7 /* Cartography */ = {
+			isa = PBXGroup;
+			children = (
+				ADF679C11A067128006A79D7 /* Coefficients.swift */,
+				ADF679C21A067128006A79D7 /* Compound.swift */,
+				ADF679C31A067128006A79D7 /* Dimension.swift */,
+				ADF679C41A067128006A79D7 /* Edge.swift */,
+				ADF679C51A067128006A79D7 /* Edges.swift */,
+				ADF679C61A067128006A79D7 /* Expression.swift */,
+				ADF679C71A067128006A79D7 /* Layout.swift */,
+				ADF679C81A067128006A79D7 /* LayoutProxy.swift */,
+				ADF679C91A067128006A79D7 /* Point.swift */,
+				ADF679CA1A067128006A79D7 /* Priority.swift */,
+				ADF679CB1A067128006A79D7 /* Property.swift */,
+				ADF679CC1A067128006A79D7 /* Size.swift */,
+				ADF679CD1A067128006A79D7 /* View.swift */,
+			);
+			path = Cartography;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,15 +326,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADF679D91A067128006A79D7 /* Size.swift in Sources */,
+				ADF679D81A067128006A79D7 /* Property.swift in Sources */,
 				AD085A9F1A053A320075C3BF /* PrimitiveNodes.swift in Sources */,
+				ADF679D41A067128006A79D7 /* Layout.swift in Sources */,
 				AD085A741A05327B0075C3BF /* ViewController.swift in Sources */,
+				ADF679D71A067128006A79D7 /* Priority.swift in Sources */,
+				ADF679D11A067128006A79D7 /* Edge.swift in Sources */,
 				ADEE122F1A05688F00AFADBF /* Dispatcher.swift in Sources */,
 				AD085A9B1A0539120075C3BF /* Node.swift in Sources */,
+				ADF679DA1A067128006A79D7 /* View.swift in Sources */,
+				ADF679D21A067128006A79D7 /* Edges.swift in Sources */,
 				AD085A991A0538F40075C3BF /* Component.swift in Sources */,
+				ADF679D61A067128006A79D7 /* Point.swift in Sources */,
+				ADF679D51A067128006A79D7 /* LayoutProxy.swift in Sources */,
 				AD085A9D1A0539480075C3BF /* Renderable.swift in Sources */,
 				ADEC33EB1A064920001D8375 /* ViewBuilder.swift in Sources */,
 				AD085AA11A0549800075C3BF /* Layouts.swift in Sources */,
+				ADF679CE1A067128006A79D7 /* Coefficients.swift in Sources */,
+				ADF679D31A067128006A79D7 /* Expression.swift in Sources */,
+				ADF679D01A067128006A79D7 /* Dimension.swift in Sources */,
 				AD085A961A0532F80075C3BF /* RenderingEngine.swift in Sources */,
+				ADF679DC1A06717E006A79D7 /* LinearLayoutView.swift in Sources */,
+				ADF679CF1A067128006A79D7 /* Compound.swift in Sources */,
 				AD085A721A05327B0075C3BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
