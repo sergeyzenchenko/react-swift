@@ -18,7 +18,9 @@
 		AD085A9B1A0539120075C3BF /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD085A9A1A0539120075C3BF /* Node.swift */; };
 		AD085A9D1A0539480075C3BF /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD085A9C1A0539480075C3BF /* Renderable.swift */; };
 		AD085A9F1A053A320075C3BF /* PrimitiveNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD085A9E1A053A320075C3BF /* PrimitiveNodes.swift */; };
-		AD085AA11A0549800075C3BF /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD085AA01A0549800075C3BF /* Layout.swift */; };
+		AD085AA11A0549800075C3BF /* Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD085AA01A0549800075C3BF /* Layouts.swift */; };
+		ADEC33EB1A064920001D8375 /* ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEC33EA1A064920001D8375 /* ViewBuilder.swift */; };
+		ADEE122F1A05688F00AFADBF /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEE122E1A05688F00AFADBF /* Dispatcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +49,9 @@
 		AD085A9A1A0539120075C3BF /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		AD085A9C1A0539480075C3BF /* Renderable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
 		AD085A9E1A053A320075C3BF /* PrimitiveNodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimitiveNodes.swift; sourceTree = "<group>"; };
-		AD085AA01A0549800075C3BF /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		AD085AA01A0549800075C3BF /* Layouts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layouts.swift; sourceTree = "<group>"; };
+		ADEC33EA1A064920001D8375 /* ViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBuilder.swift; sourceTree = "<group>"; };
+		ADEE122E1A05688F00AFADBF /* Dispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 		AD085A921A0532D80075C3BF /* Dispatcher */ = {
 			isa = PBXGroup;
 			children = (
+				ADEE122E1A05688F00AFADBF /* Dispatcher.swift */,
 			);
 			path = Dispatcher;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				AD085A951A0532F80075C3BF /* RenderingEngine.swift */,
+				ADEC33EA1A064920001D8375 /* ViewBuilder.swift */,
 			);
 			path = Rendering;
 			sourceTree = "<group>";
@@ -165,7 +171,7 @@
 				AD085A9A1A0539120075C3BF /* Node.swift */,
 				AD085A9C1A0539480075C3BF /* Renderable.swift */,
 				AD085A9E1A053A320075C3BF /* PrimitiveNodes.swift */,
-				AD085AA01A0549800075C3BF /* Layout.swift */,
+				AD085AA01A0549800075C3BF /* Layouts.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -272,10 +278,12 @@
 			files = (
 				AD085A9F1A053A320075C3BF /* PrimitiveNodes.swift in Sources */,
 				AD085A741A05327B0075C3BF /* ViewController.swift in Sources */,
+				ADEE122F1A05688F00AFADBF /* Dispatcher.swift in Sources */,
 				AD085A9B1A0539120075C3BF /* Node.swift in Sources */,
 				AD085A991A0538F40075C3BF /* Component.swift in Sources */,
 				AD085A9D1A0539480075C3BF /* Renderable.swift in Sources */,
-				AD085AA11A0549800075C3BF /* Layout.swift in Sources */,
+				ADEC33EB1A064920001D8375 /* ViewBuilder.swift in Sources */,
+				AD085AA11A0549800075C3BF /* Layouts.swift in Sources */,
 				AD085A961A0532F80075C3BF /* RenderingEngine.swift in Sources */,
 				AD085A721A05327B0075C3BF /* AppDelegate.swift in Sources */,
 			);
@@ -403,6 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReactSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -413,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReactSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -471,6 +481,7 @@
 				AD085A8D1A05327B0075C3BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD085A8E1A05327B0075C3BF /* Build configuration list for PBXNativeTarget "ReactSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +490,7 @@
 				AD085A901A05327B0075C3BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
