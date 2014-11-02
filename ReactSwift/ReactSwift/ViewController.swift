@@ -49,10 +49,8 @@ class TestComponent : Component {
 class SampleComponent : Component {
     
     struct State {
-        var enabled = false
+        let enabled = false
     }
-    
-    let stateHolder:StateHolder<State> = StateHolder<State>(state: State(enabled: false))
     
     func state() -> State {
         return super.state() as State
